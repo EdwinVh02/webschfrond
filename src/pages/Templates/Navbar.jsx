@@ -67,7 +67,7 @@ const Navbar = () => {
 
   return (
     <Box>
-      <AppBar position="fixed" color="primary">
+      <AppBar position="fixed" style={{ backgroundColor: "#3C2412" }}>
         <Toolbar>
           {/* <Icon edge="start" color="inherit" aria-label="menu">home</Icon>                 */}
           <img
