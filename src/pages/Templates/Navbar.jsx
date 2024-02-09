@@ -88,7 +88,7 @@ const Navbar = () => {
                 textColor="inherit"
                 value={values}
                 onChange={(e, values) => setValues(values)}
-                indicatorColor="secondary"
+                indicatorColor="primary"
               >
                 <MaterialLink
                   component={RouterLink}
