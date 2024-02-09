@@ -274,7 +274,7 @@ const FormRegister = () => {
         respSecret: user.respSecret,
         rol: user.rol,
       });
-      console.log(user);
+      // console.log(user);
       navigate("/");
     } catch (error) {
       console.log(error.code);

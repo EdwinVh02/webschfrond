@@ -129,7 +129,7 @@ const Footer = () => {
                                 <Box>
                                     <Link 
                                         component={RouterLink} 
-                                        to='/cuenta' 
+                                        to='/registro' 
                                         color='inherit' 
                                         underline='none'
                                     >
@@ -138,12 +138,12 @@ const Footer = () => {
                                 </Box>
                             </Grid>
 
-                            <Grid item xs={12} sm={4}>
+                            {/* <Grid item xs={12} sm={4}>
                                 <Box borderBottom={1} >Descarga gratis nuestra aplicación</Box>
                                 <Box>
                                     Proximamente...
                                 </Box>                           
-                            </Grid>
+                            </Grid> */}
                         </Grid>
                         <Box
                         sx={{
