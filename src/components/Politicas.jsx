@@ -122,18 +122,18 @@ const Politica = () => {
                         manera física a las instalaciones del hotel. Los datos de contacto
                         de la persona o departamento de datos personales, que está a cargo
                         de dar trámite a las solicitudes de derechos ARCO, son los
-                        siguientes:</p>
+                        siguientes:</p><br></br>
                     <ul>
                         <li>
-                        Nombre de la persona o departamento de datos personales: Hotel
-                        Santa Cecilia
+                          Nombre de la persona o departamento de datos personales: Hotel
+                          Santa Cecilia
                         </li>
                         <li>
-                        Domicilio: calle Nicandro Castillo, colonia Centro de Huejutla de
-                        Reyes Hidalgo, ciudad Huejutla, municipio o delegación Huejutla de
-                        Reyes Hidalgo, c.p. 43000, en la entidad de Hidalgo, país México
+                          Domicilio: calle Nicandro Castillo, colonia Centro de Huejutla de
+                          Reyes Hidalgo, ciudad Huejutla, municipio o delegación Huejutla de
+                          Reyes Hidalgo, c.p. 43000, en la entidad de Hidalgo, país México
                         </li>
-                        <li>Correo electrónico: contacto.santa.cecilia@gmail.com</li>
+                         <li>Correo electrónico: contacto.santa.cecilia@gmail.com</li>
                     </ul>
                     <h3>
             Usted puede revocar su consentimiento para el uso de sus datos
@@ -226,8 +226,9 @@ const Politica = () => {
 
           <p>
             Última actualización: <strong>15/11/2023</strong>
-          </p>          
-        </Typography>
+          </p>     
+     
+                </Typography>
             </Grid>
         </Box>
     );
