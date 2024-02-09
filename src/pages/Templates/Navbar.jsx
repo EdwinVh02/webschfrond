@@ -100,20 +100,20 @@ const Navbar = () => {
                 />
                 <MaterialLink
                   component={RouterLink}
-                  to="/cuartos"
+                  to="/zonas"
                   textcolor="inherit"
                   sx={{ marginLeft: "auto" }}
                   underline="none"
                   label="Cuartos"
                 />
-                <MaterialLink
+                {/* <MaterialLink
                   component={RouterLink}
                   to="/zonas"
                   textcolor="inherit"
                   sx={{ marginLeft: "auto" }}
                   underline="none"
                   label="Zonas"
-                />
+                /> */}
                 <MaterialLink
                   component={RouterLink}
                   to="/acercade"
