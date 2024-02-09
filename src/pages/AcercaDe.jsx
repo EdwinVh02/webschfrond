@@ -21,8 +21,8 @@ const AcercaDe = () => {
                         <br/>
                         <CardMedia
                             component="img"
-                            height="240"
-                            image={require('../assets/renta.jpg')}
+                            height="500"
+                            image={require('../assets/logo.jpg')}
                             alt="Cuarto Aviacion Civil"
                         />
                     </Grid>
@@ -32,8 +32,12 @@ const AcercaDe = () => {
                                 ¿Quienes somos?
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
-                                Nosotros somos una empresa con el objetivo de facilitar la busqueda de cuartos para rentar y tambien ayudar a personas que deseen promocionarce a encontrar un plataforma en la que tendran mayor alcance.<br/>
-                                A travez de nuestro sitio web o aplicacion podras tener acceso a distintas funcionaldades que podran satisfacer tus necesidades si lo que desea es encontrar un cuarto que se ajuste a lo que deseas.
+                            En Hotel Santa Cecilia, nos enorgullece ofrecer una experiencia única y memorable para nuestros huéspedes. 
+                            Ubicados en la Zona Centro de la ciudad de Huejuta de reyes Hidalgo, 
+                            somos un destino excepcional que combina lujo, comodidad y hospitalidad de primer nivel.
+                            Se fundo el 15 de septiembre de 2010 en Huejutla de Reyes Hidalgo. 
+                            El nombre del Hotel Santa Cecilia surge del nombre de la hija del inversionista Lic. Carlos Fayad Ruiz. 
+                            Hoy en día es una de las empresas competitivas en el mercado, pertenece a un giro de sector servicios que ofrece hospedaje y restaurant.
                             </Typography>
                         </CardContent>
                     </Grid>
@@ -44,7 +48,9 @@ const AcercaDe = () => {
                             </Typography>
                             <div className={styles.conNosotros}>    
                                 <Typography variant="body2" color="text.secondary" className={styles.vision}>
-                                Convertirse en el mejor servicio para promocion y busqueda de espacios de renta de Huejutla de Reyes Hidalgo. Haciendo mas accesible para los arrendadores el promocionarse y a los arrendados el encontrar espacios con mayor facilidad.    
+                                Ser el Hotel más auténtico de la región, 
+                                logrando la preferencia y satisfacción a nuestros clientes, 
+                                excediendo sus expectativas con un servicio excelente. 
                                 </Typography>
                             </div>
                             <Typography gutterBottom variant="h5" component="div">
@@ -52,7 +58,10 @@ const AcercaDe = () => {
                             </Typography>
                             <div className={styles.conNosotros}>
                                 <Typography variant="body2" color="text.secondary" className={styles.mision}>
-                                    Crear una plataforma de rentas no solo para los que buscan si no tambien para lo que desea ofrecer este servicio. Mientras trabajamos para lograr este objetivo, nos enfocamos en construir para el futuro, impulsar un fuerte crecimiento sostenido y crear nuevos negocios que impulsarán el éxito a largo plazo.   
+                                Ofrecer el mejor servicio de higiene, 
+                                confort y calidad a todos nuestros huéspedes y clientes, 
+                                satisfacer las necesidades y expectativas a cada uno de ellos, 
+                                con la amabilidad y servicio original en un ambiente único y autentico.
                                 </Typography>
                             </div>
                             <script src="Acerca.js"></script>
