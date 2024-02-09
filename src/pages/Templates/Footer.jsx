@@ -45,7 +45,7 @@ const Footer = () => {
                     px={{xs: 3, sm: 10}}
                     py={{xs: 3, sm: 3}}              
                     bgcolor="text.secondary" 
-                    backgroundColor="primary.dark"
+                    backgroundColor="#3C2412"
                     color="white"
                 >
                     <Container maxWidth="lg">
@@ -180,14 +180,14 @@ const Footer = () => {
                                     <Typography variant="body2" sx={{ marginBottom: '20px' }}>
                                         Podrás recibir actualizaciones de cuartos en la zona.
                                     </Typography>
-                                    <Button
+                                    {/* <Button
                                         variant="contained"
                                         size="large"
                                         type="submit"
                                         sx={{ width: '40%' }}
                                         onClick={loguearse}>
                                          Suscribirse
-                                    </Button>
+                                    </Button> */}
                                 </form>
                             </Box>
                             <Box sx={{ mt: 1 }}>
