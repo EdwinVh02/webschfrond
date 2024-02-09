@@ -73,7 +73,7 @@ const Navbar = () => {
           <img
             src={Logo}
             alt="Logosynth"            
-            style={{ width: "50px", height: "50px" }}
+            style={{ width: "50px", height: "50px",  padding: "5px" }}
             
           />
           <Typography variant="h6">Santa cecilia</Typography>
