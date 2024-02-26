@@ -67,16 +67,17 @@ const Navbar = () => {
 
   return (
     <Box>
-      <AppBar position="fixed" style={{ backgroundColor: "#3C2412" }}>
+      <AppBar  position="fixed" style={{ backgroundColor: "#804821", height: "100px"}}>
         <Toolbar>
           {/* <Icon edge="start" color="inherit" aria-label="menu">home</Icon>                 */}
           <img
             src={Logo}
             alt="Logosynth"            
-            style={{ width: "50px", height: "50px",  padding: "5px" }}
-            
+            style={{ width: "100px", height: "100px",  padding: "5px" }}
           />
-          <Typography variant="h6">Santa cecilia</Typography>
+          <Typography variant="h4" style={{ fontFamily: "Arial" }} >
+            Santa Cecilia
+          </Typography>
           {isMatch ? (
             <>
               <DrawerComp />

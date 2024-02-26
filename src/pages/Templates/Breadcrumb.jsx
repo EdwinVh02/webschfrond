@@ -60,7 +60,7 @@ const Breadcrumb = () => {
     })
 
     return (
-        <Container maxWidth='lg' sx={{maxWidht: 800, mt:12, mb:2}}>
+        <Container maxWidth='lg' sx={{maxWidht: 900, mt:15, mb:2}}>
             <div role="presentation">
                 <Breadcrumbs aria-label="breadcrumb" separator={<NavigateNextIcon fontSize="small" />}>
                     <StyledBreadcrumb

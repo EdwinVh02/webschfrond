@@ -45,7 +45,7 @@ const Footer = () => {
                     px={{xs: 3, sm: 10}}
                     py={{xs: 3, sm: 3}}              
                     bgcolor="text.secondary" 
-                    backgroundColor="#3C2412"
+                    backgroundColor="#804821"
                     color="white"
                 >
                     <Container maxWidth="lg">
@@ -191,7 +191,7 @@ const Footer = () => {
                                 </form>
                             </Box>
                             <Box sx={{ mt: 1 }}>
-                                &reg; {new Date().getFullYear()} Your Room. Todos los derechos reservados
+                                &reg; {new Date().getFullYear()} Hotel Santa Cecilia. Todos los derechos reservados
                             </Box>
                         </Box>
                     </Container>
