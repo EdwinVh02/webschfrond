@@ -167,29 +167,6 @@ const Footer = () => {
                                 <InstagramIcon color="dark" />
                                 </IconButton>
                             </Box>
-                            <Box
-                                className="col-md-5 offset-md-1 mb-3"
-                                sx={{
-                                padding: '20px',
-                                borderRadius: '10px',
-                                }}>
-                                <form>
-                                    <Typography variant="h5" sx={{ marginBottom: '10px' }}>
-                                        Suscríbete para recibir noticias
-                                    </Typography>
-                                    <Typography variant="body2" sx={{ marginBottom: '20px' }}>
-                                        Podrás recibir actualizaciones de cuartos en la zona.
-                                    </Typography>
-                                    {/* <Button
-                                        variant="contained"
-                                        size="large"
-                                        type="submit"
-                                        sx={{ width: '40%' }}
-                                        onClick={loguearse}>
-                                         Suscribirse
-                                    </Button> */}
-                                </form>
-                            </Box>
                             <Box sx={{ mt: 1 }}>
                                 &reg; {new Date().getFullYear()} Hotel Santa Cecilia. Todos los derechos reservados
                             </Box>

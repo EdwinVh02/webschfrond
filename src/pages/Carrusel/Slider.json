@@ -1,22 +1,22 @@
 [
     {
         "id": 1,
-        "imagen": "https://images.pexels.com/photos/1571450/pexels-photo-1571450.jpeg?cs=srgb&dl=pexels-vecislavas-popa-1571450.jpg&fm=jpg",
+        "imagen": "https://lh5.googleusercontent.com/p/AF1QipMSxt2jUDBg10jzNeFGmPO4o5mvTm5BZCibd5lh=s1354-k-no",
         "titulo": "Cuarto 1"
     },
     {
         "id": 2,
-        "imagen": "https://images.pexels.com/photos/8082562/pexels-photo-8082562.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+        "imagen": "https://lh5.googleusercontent.com/p/AF1QipOl25UBIltogTGksCJ3oJOf9VB_EHxN5stNmYsN=s901-k-no",
         "titulo": "Cuarto 2"
     },
     {
         "id": 3,
-        "imagen": "https://images.pexels.com/photos/9209422/pexels-photo-9209422.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+        "imagen": "https://lh5.googleusercontent.com/p/AF1QipPiuDoFNMhNZEhloddP2aaKaGEFJVHHPodPlxO3=s1354-k-no",
         "titulo": "Cuarto 3"
     },
     {
         "id": 4,
-        "imagen": "https://images.pexels.com/photos/2029731/pexels-photo-2029731.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+        "imagen": "https://lh5.googleusercontent.com/p/AF1QipNVpxfQg2LVGUkD2hvZNbw4rbjzYkwOODSkp7E2=s912-k-no",
         "titulo": "Cuarto 4"
     }
 ]
