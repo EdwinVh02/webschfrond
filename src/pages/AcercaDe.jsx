@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import {
     Box,
@@ -6,9 +6,13 @@ import {
     CardMedia,
     CardContent,
     Typography,
+    Button,
 } from '@mui/material'
 import styles from './AcercaDe.module.css'
 const AcercaDe = () => {
+    const [showVision, setShowVision] = useState(true);
+    const [showMision, setShowMision] = useState(true);
+
     return (
         <motion.div
             initial={{width: 0}}
@@ -40,34 +44,45 @@ const AcercaDe = () => {
                             Hoy en día es una de las empresas competitivas en el mercado, pertenece a un giro de sector servicios que ofrece hospedaje y restaurant.
                             </Typography>
                         </CardContent>
+
                     </Grid>
+                    
                     <Grid item xs={16} sx={{mt: 2}}>
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="div">
                                 Vision
                             </Typography>
-                            <div className={styles.conNosotros}>    
+                            {showVision && (
+                              <div className={styles.conNosotros}>    
                                 <Typography variant="body2" color="text.secondary" className={styles.vision}>
                                 Ser el Hotel más auténtico de la región, 
                                 logrando la preferencia y satisfacción a nuestros clientes, 
                                 excediendo sus expectativas con un servicio excelente. 
                                 </Typography>
-                            </div>
+                            <Button onClick={() => setShowVision(!showVision)}>Mostrar/Ocultar</Button>
+
+                              </div>
+                            )}
                             <Typography gutterBottom variant="h5" component="div">
                                 Misión
                             </Typography>
-                            <div className={styles.conNosotros}>
+                            {showMision && (
+                              <div className={styles.conNosotros}>
                                 <Typography variant="body2" color="text.secondary" className={styles.mision}>
                                 Ofrecer el mejor servicio de higiene, 
                                 confort y calidad a todos nuestros huéspedes y clientes, 
                                 satisfacer las necesidades y expectativas a cada uno de ellos, 
                                 con la amabilidad y servicio original en un ambiente único y autentico.
                                 </Typography>
-                            </div>
+                <Button onClick={() => setShowMision(!showMision)}>Mostrar/Ocultar</Button>
+
+                              </div>
+                            )}
                             <script src="Acerca.js"></script>
                         </CardContent>
                     </Grid>
-                </Grid>              
+                </Grid>
+                
             </Box>
         </motion.div>
     );
