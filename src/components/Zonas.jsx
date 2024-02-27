@@ -31,9 +31,9 @@ const Zonas = () => {
     <motion.div
       initial={{ width: 0 }}
       animate={{ width: "100%" }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}//Duracion de transicion de las interfaces 
     >
-      <Box sx={{ flexGrow: 1 }}>
+      <Box sx={{ flexGrow: 1 }} >
         <Grid item xs={15} sx={{ mb: 10 }}>
           <Titulo elevation={0}>
             <h3>Habitaciones Disponibles</h3>

@@ -341,7 +341,8 @@ const FormRegister = () => {
             Registrarme
           </Typography>
           {error && <Error message={error} />}
-          <Box component="form" sx={{ mt: 3 }} onSubmit={handleSubmit}>
+          <Box component="form" sx={{ mt: 3 }} onSubmit={handleSubmit} //Onsubmit 
+          > 
             <Grid container spacing={2}>
               <Grid item xs={12}>
                 <TextField
@@ -367,7 +368,7 @@ const FormRegister = () => {
                   label="Apellido Paterno"
                   name="txtAPaterno"
                   id="txtAPaterno"
-                  onChange={handleAPaterno}
+                  onChange={handleAPaterno}//OnChange
                   error={errorAPaterno}
                   helperText={leyendaAPaterno}
                 />
@@ -481,7 +482,9 @@ const FormRegister = () => {
                   helperText={leyendaPass}
                   InputProps={{
                     endAdornment: (
-                      <IconButton onClick={handleTogglePasswordVisibility}>
+                      <IconButton onClick={handleTogglePasswordVisibility} //Onclick para la visibilidad de la contraseña
+                     
+                     >  
                         {showPassword ? <Visibility /> : <VisibilityOff />}
                       </IconButton>
                     ),
