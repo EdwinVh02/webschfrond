@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "titulo": "Habitación Estándar",
+    "camas": 1,
+    "capacidad": 1,
+    "servicios": [
+      "Wifi",
+      "TV por cable",
+      "Agua fría y caliente",
+      "Aire acondicionado"
+    ],
+    "amenidades": ["Desayuno continental", "Kit de aseo personal"],
+    "precio": 679.0,
+    "disponible": true,
+    "imagen": "habitacion_estandar2Camas.jpg"
+  },
+  {
+    "id": 2,
+    "titulo": "Habitación Estándar con 2 Camas",
+    "camas": 2,
+    "capacidad": 2,
+    "servicios": [
+      "Wifi",
+      "TV por cable",
+      "Agua fría y caliente",
+      "Aire acondicionado"
+    ],
+    "amenidades": ["Desayuno continental", "Kit de aseo personal"],
+    "precio": 739.0,
+    "disponible": true,
+    "imagen": "habitacion_estandar2Camas.jpg"
+  },
+  {
+    "id": 3,
+    "titulo": "Habitación Estándar con 3 Camas",
+    "camas": 3,
+    "capacidad": 3,
+    "servicios": [
+      "Wifi",
+      "TV por cable",
+      "Agua fría y caliente",
+      "Aire acondicionado"
+    ],
+    "amenidades": ["Desayuno continental", "Kit de aseo personal"],
+    "precio": 819.0,
+    "disponible": true,
+    "imagen": "habitacion_estandar2Camas.jpg"
+  },
+  {
+    "id": 4,
+    "titulo": "Habitación Junior Suite",
+    "camas": 1,
+    "capacidad": 1,
+    "servicios": [
+      "Wifi",
+      "TV por cable",
+      "Agua fría y caliente",
+      "Aire acondicionado"
+    ],
+    "amenidades": ["Desayuno continental", "Kit de aseo personal"],
+    "precio": 819.0,
+    "disponible": true,
+    "imagen": "habitacion_juniorsuite.jpg"
+  },
+  {
+    "id": 5,
+    "titulo": "Habitación Junior Suite con 2 Camas",
+    "camas": 2,
+    "capacidad": 2,
+    "servicios": [
+      "Wifi",
+      "TV por cable",
+      "Agua fría y caliente",
+      "Aire acondicionado"
+    ],
+    "amenidades": ["Desayuno continental", "Kit de aseo personal"],
+    "precio": 819.0,
+    "disponible": true,
+    "imagen": "habitacion_juniorsuite.jpg"
+  },
+  {
+    "id": 6,
+    "titulo": "Habitación Junior Suite con 3 Camas",
+    "camas": 3,
+    "capacidad": 3,
+    "servicios": [
+      "Wifi",
+      "TV por cable",
+      "Agua fría y caliente",
+      "Aire acondicionado"
+    ],
+    "amenidades": ["Desayuno continental", "Kit de aseo personal"],
+    "precio": 819.0,
+    "disponible": true,
+    "imagen": "habitacion_juniorsuite.jpg"
+  },
+  {
+    "id": 38,
+    "titulo": "Habitación Estándar con 3 Camas",
+    "camas": 3,
+    "capacidad": 3,
+    "servicios": [
+      "Wifi",
+      "TV por cable",
+      "Agua fría y caliente",
+      "Aire acondicionado"
+    ],
+    "amenidades": ["Desayuno continental", "Kit de aseo personal"],
+    "precio": 819.0,
+    "disponible": true,
+    "imagen": "habitacion_estandar2Camas.jpg"
+  },
+  {
+    "id": 41,
+    "titulo": "Habitación Junior Suite",
+    "camas": 1,
+    "capacidad": 1,
+    "servicios": [
+      "Wifi",
+      "TV por cable",
+      "Agua fría y caliente",
+      "Aire acondicionado"
+    ],
+    "amenidades": ["Desayuno continental", "Kit de aseo personal"],
+    "precio": 819.0,
+    "disponible": true,
+    "imagen": "habitacion_juniorsuite.jpg"
+  },
+  {
+    "id": 51,
+    "titulo": "Habitación Junior Suite con 2 Camas",
+    "camas": 2,
+    "capacidad": 2,
+    "servicios": [
+      "Wifi",
+      "TV por cable",
+      "Agua fría y caliente",
+      "Aire acondicionado"
+    ],
+    "amenidades": ["Desayuno continental", "Kit de aseo personal"],
+    "precio": 819.0,
+    "disponible": true,
+    "imagen": "habitacion_juniorsuite.jpg"
+  },
+  {
+    "id": 61,
+    "titulo": "Habitación Junior Suite con 3 Camas",
+    "camas": 3,
+    "capacidad": 3,
+    "servicios": [
+      "Wifi",
+      "TV por cable",
+      "Agua fría y caliente",
+      "Aire acondicionado"
+    ],
+    "amenidades": ["Desayuno continental", "Kit de aseo personal"],
+    "precio": 819.0,
+    "disponible": true,
+    "imagen": "habitacion_juniorsuite.jpg"
+  }
+]
