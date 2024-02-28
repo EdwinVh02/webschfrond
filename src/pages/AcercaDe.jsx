@@ -9,6 +9,7 @@ import {
   Button,
 } from "@mui/material";
 import styles from "./AcercaDe.module.css";
+
 const AcercaDe = () => {
   const [showVision, setShowVision] = useState(true);
   const [showMision, setShowMision] = useState(true);
