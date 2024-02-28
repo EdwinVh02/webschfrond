@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import {
   styled,
@@ -23,13 +23,21 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const Zonas = () => {
+  const [zoom, setZoom] = useState(1);
+
+  const handleWheel = (event) => {
+    setZoom(Math.min(Math.max(0.5, zoom + event.deltaY * 0.005), 3));
+  };
+
   return (
     <motion.div
       initial={{ width: 0 }}
       animate={{ width: "100%" }}
       exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+      onWheel={handleWheel}
+      style={{ overflowY: "hidden", height: "100vh" }}
     >
-      <Box sx={{ flexGrow: 1 }} >
+      <Box sx={{ flexGrow: 1 }} style={{ transform: `scale(${zoom})` }}>
         <Grid item xs={15} sx={{ mb: 10 }}>
           <Titulo elevation={0}>
             <h3>Habitaciones Disponibles</h3>
@@ -62,28 +70,6 @@ const Zonas = () => {
                               variant="body2"
                               color="text.secondary"
                             >
-                              <strong>CUENTA CON:</strong>
-                              <br />
-                              {habitacion.camas} Cama
-                              {habitacion.camas > 1 ? "s" : ""} Matrimonial
-                              {habitacion.camas > 1 ? "es" : ""}
-                              <br />
-                              <strong>SERVICIOS:</strong>
-                              <br />
-                              {habitacion.servicios.join(", ")}
-                              <br />
-                              <strong>AMENIDADES:</strong>
-                              <br />
-                              {habitacion.amenidades.join(", ")}
-                              <br />
-                              <strong>
-                                Precio: ${habitacion.precio.toFixed(2)}
-                              </strong>
-                              <br />
-                              <strong>
-                                {habitacion.capacidad} Persona
-                                {habitacion.capacidad > 1 ? "s" : ""}
-                              </strong>
                             </Typography>
                           </CardContent>
                         </CardActionArea>
@@ -120,28 +106,6 @@ const Zonas = () => {
                               variant="body2"
                               color="text.secondary"
                             >
-                              <strong>CUENTA CON:</strong>
-                              <br />
-                              {habitacion.camas} Cama
-                              {habitacion.camas > 1 ? "s" : ""} Matrimonial
-                              {habitacion.camas > 1 ? "es" : ""}
-                              <br />
-                              <strong>SERVICIOS:</strong>
-                              <br />
-                              {habitacion.servicios.join(", ")}
-                              <br />
-                              <strong>AMENIDADES:</strong>
-                              <br />
-                              {habitacion.amenidades.join(", ")}
-                              <br />
-                              <strong>
-                                Precio: ${habitacion.precio.toFixed(2)}
-                              </strong>
-                              <br />
-                              <strong>
-                                {habitacion.capacidad} Persona
-                                {habitacion.capacidad > 1 ? "s" : ""}
-                              </strong>
                             </Typography>
                           </CardContent>
                         </CardActionArea>
