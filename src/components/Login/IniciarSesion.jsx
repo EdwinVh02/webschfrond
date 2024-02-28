@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { useAuth } from "../../context/authContext";
 import { Link, useNavigate } from "react-router-dom";
 import { doc, getDoc } from 'firebase/firestore';
@@ -21,12 +21,15 @@ const FormLogin = () => {
     const { login } = useAuth();
     const navigate = useNavigate();
     const [error, setError] = useState("");
+    const [email, setEmail] = useState(""); // Nuevo estado para el correo electrónico
+    const [password, setPassword] = useState(""); // Nuevo estado para la contraseña
+    const [rol, setRol] = useState(""); // Nuevo estado para el rol
 
-    const [user, setUser] = useState({
-        email: "",
-        password: "",
-        rol: "",
-    });
+    useEffect(() => {
+        if (email && password) { // Sólo ejecuta cuando se actualizan email y password
+            handleSubmit(); // Ejecutar handleSubmit si email y password están llenos
+        }
+    }, [email, password]); // Se ejecuta cuando email y password se actualizan
 
     async function getRol(uid){
         const docRef = doc(db, `usuarios/${uid}`);
@@ -35,11 +38,10 @@ const FormLogin = () => {
         return infoFinal;
     }
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
+    const handleSubmit = async () => { // Elimina el parámetro e
         setError("");
         try {
-            const userInfo = await login(user.email, user.password);
+            const userInfo = await login(email, password); // Usar email y password
             getRol(userInfo.user.uid).then((rol) => {
                 if(rol==='Arrendador'){
                     navigate("/miscuartos");
@@ -91,7 +93,7 @@ const FormLogin = () => {
                             type="email"
                             name="email"
                             id='txtEmail'
-                            onChange={(e) => setUser({ ...user, email: e.target.value })}     
+                            onChange={(e) => setEmail(e.target.value)} // Usar setEmail para actualizar el correo electrónico
                         />
                         <TextField
                             margin="normal"
@@ -103,7 +105,7 @@ const FormLogin = () => {
                             type="password"
                             name="password"
                             id='txtPassword'
-                            onChange={(e) => setUser({ ...user, password: e.target.value })}
+                            onChange={(e) => setPassword(e.target.value)} // Usar setPassword para actualizar la contraseña
                         />
                         <Button
                             type="submit"
