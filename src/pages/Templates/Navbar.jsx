@@ -67,9 +67,8 @@ const Navbar = () => {
 
   return (
     <Box>
-      <AppBar  position="fixed" style={{ backgroundColor: "#804821", height: "100px"}}>
+      <AppBar position="fixed" style={{ backgroundColor: "#804821", height: "100px"}}>
         <Toolbar>
-          {/* <Icon edge="start" color="inherit" aria-label="menu">home</Icon>                 */}
           <img
             src={Logo}
             alt="Logosynth"            
@@ -85,7 +84,12 @@ const Navbar = () => {
           ) : (
             <>
               <Tabs
-                sx={{ marginLeft: "auto" }}
+                sx={{
+                  marginLeft: "auto",
+                  "& .MuiTab-root:hover": {
+                    backgroundColor: "#a04000", 
+                  },
+                }}
                 textColor="inherit"
                 value={values}
                 onChange={(e, values) => setValues(values)}
@@ -107,14 +111,6 @@ const Navbar = () => {
                   underline="none"
                   label="Cuartos"
                 />
-                {/* <MaterialLink
-                  component={RouterLink}
-                  to="/zonas"
-                  textcolor="inherit"
-                  sx={{ marginLeft: "auto" }}
-                  underline="none"
-                  label="Zonas"
-                /> */}
                 <MaterialLink
                   component={RouterLink}
                   to="/acercade"

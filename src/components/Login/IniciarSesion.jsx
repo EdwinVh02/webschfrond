@@ -21,15 +21,15 @@ const FormLogin = () => {
     const { login } = useAuth();
     const navigate = useNavigate();
     const [error, setError] = useState("");
-    const [email, setEmail] = useState(""); // Nuevo estado para el correo electrónico
-    const [password, setPassword] = useState(""); // Nuevo estado para la contraseña
-    const [rol, setRol] = useState(""); // Nuevo estado para el rol
+    const [email, setEmail] = useState(""); 
+    const [password, setPassword] = useState("");
+    const [rol, setRol] = useState(""); 
 
     useEffect(() => {
-        if (email && password) { // Sólo ejecuta cuando se actualizan email y password
-            handleSubmit(); // Ejecutar handleSubmit si email y password están llenos
+        if (email && password) {
+            handleSubmit(); 
         }
-    }, [email, password]); // Se ejecuta cuando email y password se actualizan
+    }, [email, password]); 
 
     async function getRol(uid){
         const docRef = doc(db, `usuarios/${uid}`);
@@ -58,7 +58,7 @@ const FormLogin = () => {
                 setError('El correo que ingresaste no existe');
             }
             if(error.code === "auth/wrong-password"){
-                setError('La contraseña es incorrecta');
+                setError('El correo o contraseña no son validos');
             }  
         }
     };

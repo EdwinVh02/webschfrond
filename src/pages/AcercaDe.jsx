@@ -70,7 +70,7 @@ const AcercaDe = () => {
                 </div>
               )}
               <Button onClick={() => setShowVision(!showVision)}>
-                Mostrar/Ocultar
+              +/-
               </Button>
               <Typography gutterBottom variant="h5" component="div">
                 Misión
@@ -91,7 +91,7 @@ const AcercaDe = () => {
                 </div>
               )}
               <Button onClick={() => setShowMision(!showMision)}>
-                Mostrar/Ocultar
+                +/-
               </Button>
 
               <script src="Acerca.js"></script>
