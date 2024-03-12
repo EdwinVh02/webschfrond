@@ -23,8 +23,8 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const Zonas = () => {
+  
   const [zoom, setZoom] = useState(1);
-
   const handleWheel = (event) => {
     setZoom(Math.min(Math.max(0.5, zoom + event.deltaY * 0.005), 3));
   };
