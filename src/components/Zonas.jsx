@@ -23,18 +23,18 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const Zonas = () => {
-  
+
   const [zoom, setZoom] = useState(1);
-  const handleWheel = (event) => {
+  /*const handleWheel = (event) => {
     setZoom(Math.min(Math.max(0.5, zoom + event.deltaY * 0.005), 3));
-  };
+  };*/
 
   return (
     <motion.div
       initial={{ width: 0 }}
       animate={{ width: "100%" }}
       exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
-      onWheel={handleWheel}
+      /*onWheel={handleWheel}*/
       style={{ overflowY: "hidden", height: "100vh" }}
     >
       <Box sx={{ flexGrow: 1 }} style={{ transform: `scale(${zoom})` }}>
