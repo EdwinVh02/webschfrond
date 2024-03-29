@@ -80,42 +80,7 @@ const Zonas = () => {
               ))}
             </div>
           </Grid>
-          <Grid item xs={6}>
-            <div style={{ height: '900px', overflowY: 'scroll' }}>
-              {habitaciones.map((habitacion, index) => (
-                <React.Fragment key={index}>
-                  <Grid item xs={12} sm={6} md={6} key={habitacion.id}>
-                    <Item elevation={0}>
-                      <Card sx={{ maxWidth: 345 }}>
-                        <CardActionArea>
-                          <CardMedia
-                            component="img"
-                            height="350"
-                            image={require(`../assets/${habitacion.imagen}`)}
-                            alt={habitacion.titulo}
-                          />
-                          <CardContent>
-                            <Typography
-                              gutterBottom
-                              variant="h5"
-                              component="div"
-                            >
-                              {habitacion.titulo}
-                            </Typography>
-                            <Typography
-                              variant="body2"
-                              color="text.secondary"
-                            >
-                            </Typography>
-                          </CardContent>
-                        </CardActionArea>
-                      </Card>
-                    </Item>
-                  </Grid>
-                </React.Fragment>
-              ))}
-            </div>
-          </Grid>
+          
         </Grid>
       </Box>
     </motion.div>
